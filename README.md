@@ -1,2 +1,2 @@
 # AntiReach
-A @PocketMine plugin
+Makes hackers impossible to hit their enemies while using speed hack
