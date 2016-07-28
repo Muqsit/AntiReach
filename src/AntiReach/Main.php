@@ -2,18 +2,11 @@
 namespace AntiReach;
 
 use pocketmine\plugin\PluginBase;
-
-use pocketmine\command\Command;
-use pocketmine\command\CommandSender;
-
+use pocketmine\command\{Command, CommandSender};
 use pocketmine\event\Listener;
-
 use pocketmine\item\Item;
-
 use pocketmine\Player;
-
-use pocketmine\event\entity\EntityDamageEvent;
-use pocketmine\event\entity\EntityDamageByEntityEvent;
+use pocketmine\event\entity\{EntityDamageEvent, EntityDamageByEntityEvent};
 
 class Main extends PluginBase implements Listener {
 
@@ -28,7 +21,7 @@ class Main extends PluginBase implements Listener {
       $victim = $event->getEntity();
       $distance = $attacker->distance($victim->getPosition());
 
-   if($dist > 5 && $attacker->getLevel()->getName() == $victim->getLevel()->getName()) {
+   if($distance > 5 && $attacker->getLevel()->getName() == $victim->getLevel()->getName()) {
     if($attacker instanceof Player) {
       if($attacker->getInventory()->getItemInHand()->getId() == Item::BOW) {
         return;
