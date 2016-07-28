@@ -2,13 +2,16 @@
 namespace AntiReach;
 
 use pocketmine\plugin\PluginBase;
+
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
-use pocketmine\utils\Config;
-use pocketmine\utils\TextFormat as color;
+
 use pocketmine\event\Listener;
+
 use pocketmine\item\Item;
+
 use pocketmine\Player;
+
 use pocketmine\event\entity\EntityDamageEvent;
 use pocketmine\event\entity\EntityDamageByEntityEvent;
 
