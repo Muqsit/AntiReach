@@ -1,0 +1,6 @@
+name: AntiReach
+main: AntiReach\Main
+author: Kairus Dark Seeker
+description: Makes hackers impossible to hit their enemies while using speed hack
+api: [2.0.0]
+version: 1.0.0
